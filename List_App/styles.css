@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #555;
+}
+h1{
+    color :#08f;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+    text-decoration: none;
+    color : #08f;
+}
+input{
+    background-color: #555;
+    color: #08f9;
+}
+button{
+    margin-top: 1px;
+    color: #000;
+    border-radius: 4px;
+    background-color: #08f5;
+}
