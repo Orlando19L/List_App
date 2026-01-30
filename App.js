@@ -11,7 +11,7 @@ const initialState = {
 
 let state = { ...initialState };
 
-// EVENTS
+
 Add.addEventListener('click', () => {
   if (Input.value.trim() === '') return;
   dispatch('ADD_ITEM', Input.value);
@@ -22,13 +22,12 @@ Select.addEventListener('change', () => {
     dispatch('SET_FILTER',Select.value);
 })
 
-// DISPATCH`
+
 function dispatch(type, payload) {
   state = reducer(state, { type, payload });
   render(state);
 }
 
-// UPDATE (EL CEREBRO)
 function reducer(state, action) {
   if (action.type === 'ADD_ITEM') {
     return { 
@@ -121,3 +120,4 @@ function render(state) {
   })
 }
   
+
