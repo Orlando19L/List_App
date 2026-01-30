@@ -110,7 +110,7 @@ function render(state) {
 
     const btn = document.createElement('button');
     btn.classList.add('nontranslate');
-    btn.textContent = 'X';
+    btn.textContent = 'Delete';
     btn.addEventListener('click', () => {
       dispatch('REMOVE_ITEM', item.id);
     });
@@ -121,6 +121,7 @@ function render(state) {
   })
 }
   
+
 
 
 
